@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag and Drop assignment</title>
+    <link rel="stylesheet" type="text/css" href="dragDrop.css" />
+  </head>
+  <body>
+    <h1>Drag and Drop</h1>
+
+    <div class="container">
+      <div class="drag-container">
+        <div class="item" draggable="true" ondragstart="drag(event)">
+          <img src="" alt="Item 1" />
+        </div>
+        <div class="item" draggable="true" ondragstart="drag(event)">
+          <img src="" alt="Item 2" />
+        </div>
+        <div class="item" draggable="true" ondragstart="drag(event)">
+          <img src="" alt="Item 3" />
+        </div>
+        <div class="item" draggable="true" ondragstart="drag(event)">
+          <img src="" alt="Item 4" />
+        </div>
+        <div class="item" draggable="true" ondragstart="drag(event)">
+          <img src="" alt="Item 5" />
+        </div>
+        <div class="item" draggable="true" ondragstart="drag(event)">
+          <img src="" alt="Item 6" />
+        </div>
+      </div>
+      <div
+        class="drop-container"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2>Drop items here</h2>
+      </div>
+    </div>
+
+    <div class="success-message" id="successMessage"></div>
+
+    <button onclick="resetContainers()" class="reset-button">Reset</button>
+
+    <script src="dragDrop.js"></script>
+  </body>
+</html>
